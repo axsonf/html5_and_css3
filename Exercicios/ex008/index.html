@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="html icon.ico" type="image/x-icon">
+    <title>Ex008</title>
+
+    <style>
+        h2 {
+            background-color: cadetblue;
+        }
+        mark {
+            background-color: red;
+        }
+    </style>
+
+</head>
+<body>
+    <h1 style="background-color: darkslategrey;">Main formats.</h1>
+    <h2>Bold / Emphasis-Destaque...</h2>
+    <p>In this sentence we have a <b>term in bold</b> using the  <mark>&lt;/b&gt;</mark>  tag.</p>
+    <!--A tag <b> é uma tag não semântica.-->
+
+    <p>In this sentence, i have a <strong>term in emphasis / destaque</strong> using the  <mark>&lt;/strong&gt;</mark>  tag.</p>
+    <!--A tag </strong> é semântica.-->
+
+    <h2>Italic / Emphasis...</h2>
+    <p>In this sentence, we hae a <i>term in italic</i> using the  <mark>&lt;/i&gt;</mark>  tag.</p>
+    <!--Uma tag não semântica.-->
+
+    <p>In this sentence, we have a <em>term in emphasis</em> using the  <mark>&lt;/em&gt;</mark>  tag.</p>
+    <!--Semântica.-->
+
+    <h2>Marked text...</h2>
+    <p>We can creat also  <mark style="background-color: royalblue;"> a marked text</mark>  using the  <mark>&lt;/mark&gt;</mark>  tag.</p>
+    <!--Cor é forma!-->
+    <!--Usamos o parâmetro </style> dentro da tag </mark> para definir a corto do marcador(CSS)-->
+    <p>And in other paragraph, we have  <mark>other marked text</mark>  in final.</p>
+    <!--Não herda a cor do de cima.-->
+    <!--Para mudar a cor dos dois ao mesmo tempo, temos que criar um seletor </style> na tag </head>-->
+
+    <!--<head>
+            <style>
+                mark {
+                    background-color:  ;
+                }
+            </style>
+        </head>-->
+
+    <h2>Big and small text...</h2>
+    <p>Creating a <big>big text</big> and a <small>small text</small> in this paragraph.</p>
+    <!--A tag </big> é obsoleta e a tag </small> não é.-->
+    <!--</big> não tem um significado, já </small> tem.-->
+    
+    <h2>Deleted text...</h2>
+    <p>We can mark a <del>text as excluded</del> to indicate that it should be read but not considered.</p>
+
+    <h2>Inserted text...</h2>
+    <p>We can mark a <ins>text as inserted</ins> to give a emphasis and indicate  that it was added later.</p>
+    <!--Ele fica mais como uma sublinhação.-->
+    <!--Também existe o sublinhado com a tag </u>, mas ela não é semântica, logo ela é obsoleta.-->
+    <p><u>For example</u>.</p>
+
+    <h2>Supercript text...</h2>
+    <p>To insert things like x<sup>20</sup>+3.</p>
+
+    <h2>Subscript text...</h2>
+    <p>To insert things like H<sub>2</sub>O.</p>
+</body>
+</html>

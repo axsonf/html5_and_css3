@@ -1,0 +1,59 @@
+
+body {
+    background-image: linear-gradient(to left, #17D1FF, #2CA2BF, #1092B3, #0B6880, #123942);
+    text-align: center;
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    color: white;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+p {
+    color: white;
+}
+
+p a {
+    color: white;
+    text-decoration: none;
+}
+
+/*.links p a {
+    
+}
+
+div {
+    width: 300px;
+    height: 300px;
+    border-radius: 8px;
+    border: 2px solid black;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+div:hover {
+    background-color: aqua;
+  }
+  
+  button {
+    font-size: 18px;
+    font-weight: 600;
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: red;
+  }*/
