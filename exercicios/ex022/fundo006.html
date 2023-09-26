@@ -4,19 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagens/css3-icon.ico" type="image/x-icon">
-    <title>Teste de Imagem de Fundo</title>
+    <title>Fundo Fixo de Tela</title>
     <style>
         body{
-            height: 100vh;
+            /*height: 100vh;
             background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center top;
             background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed;*/
+
+            /* ShortHand Background
+                color > image > position > repeat > [size] > attachment
+
+                CORRETO
+                    color > image > repeat > attachment > position >/size
+            */
+
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cove;
+
+            background: black url('imagens/wallpaper002.jpg') no-repeat fixed center center/cover;
+
+            /*
+            background: black url('imagens/wallpaper002.jpg') center center/cover no-repeat fixed;
+
+            [Size] depois de [Position], porém com uma barra juntando os dois
+
+            -------Seguinte a barra "/" é utilizada aqui para separar "center" que é a posição da imagem de fundo e "cover" que é a dimensão da imagem. Se não colocar a barra, o interpretador de css pode interpretar como uma propriedade incorreta e sua imagem pode não ser exibida corretamente.----------
+
+            */
+
+            /* BackGround-Size não funciona na Shorthand */
         }
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 2px solid darkblue;
@@ -27,6 +51,13 @@
 <body>
     <main>
         <h1>Teste de imagem de fundo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, nulla, eligendi incidunt laudantium, vitae repellendus provident error soluta repellat cumque at saepe sint? Voluptate ullam a iure molestias quod. Lorem, ipsum dolor sit amet consectetur adipisicing elit. In provident quia tenetur aut a aperiam eveniet unde dolore? Optio recusandae iste inventore sint quas voluptatibus at nemo rem aliquid sit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt delectus veniam ratione, laboriosam recusandae natus cumque exercitationem a odit aperiam architecto nobis omnis et sequi optio blanditiis ullam assumenda maxime!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, nulla, eligendi incidunt laudantium, vitae repellendus provident error soluta repellat cumque at saepe sint? Voluptate ullam a iure molestias quod. Lorem, ipsum dolor sit amet consectetur adipisicing elit. In provident quia tenetur aut a aperiam eveniet unde dolore? Optio recusandae iste inventore sint quas voluptatibus at nemo rem aliquid sit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt delectus veniam ratione, laboriosam recusandae natus cumque exercitationem a odit aperiam architecto nobis omnis et sequi optio blanditiis ullam assumenda maxime!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, nulla, eligendi incidunt laudantium, vitae repellendus provident error soluta repellat cumque at saepe sint? Voluptate ullam a iure molestias quod. Lorem, ipsum dolor sit amet consectetur adipisicing elit. In provident quia tenetur aut a aperiam eveniet unde dolore? Optio recusandae iste inventore sint quas voluptatibus at nemo rem aliquid sit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt delectus veniam ratione, laboriosam recusandae natus cumque exercitationem a odit aperiam architecto nobis omnis et sequi optio blanditiis ullam assumenda maxime!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, nulla, eligendi incidunt laudantium, vitae repellendus provident error soluta repellat cumque at saepe sint? Voluptate ullam a iure molestias quod. Lorem, ipsum dolor sit amet consectetur adipisicing elit. In provident quia tenetur aut a aperiam eveniet unde dolore? Optio recusandae iste inventore sint quas voluptatibus at nemo rem aliquid sit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt delectus veniam ratione, laboriosam recusandae natus cumque exercitationem a odit aperiam architecto nobis omnis et sequi optio blanditiis ullam assumenda maxime!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, nulla, eligendi incidunt laudantium, vitae repellendus provident error soluta repellat cumque at saepe sint? Voluptate ullam a iure molestias quod. Lorem, ipsum dolor sit amet consectetur adipisicing elit. In provident quia tenetur aut a aperiam eveniet unde dolore? Optio recusandae iste inventore sint quas voluptatibus at nemo rem aliquid sit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt delectus veniam ratione, laboriosam recusandae natus cumque exercitationem a odit aperiam architecto nobis omnis et sequi optio blanditiis ullam assumenda maxime!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, nulla, eligendi incidunt laudantium, vitae repellendus provident error soluta repellat cumque at saepe sint? Voluptate ullam a iure molestias quod. Lorem, ipsum dolor sit amet consectetur adipisicing elit. In provident quia tenetur aut a aperiam eveniet unde dolore? Optio recusandae iste inventore sint quas voluptatibus at nemo rem aliquid sit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt delectus veniam ratione, laboriosam recusandae natus cumque exercitationem a odit aperiam architecto nobis omnis et sequi optio blanditiis ullam assumenda maxime!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, nulla, eligendi incidunt laudantium, vitae repellendus provident error soluta repellat cumque at saepe sint? Voluptate ullam a iure molestias quod. Lorem, ipsum dolor sit amet consectetur adipisicing elit. In provident quia tenetur aut a aperiam eveniet unde dolore? Optio recusandae iste inventore sint quas voluptatibus at nemo rem aliquid sit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt delectus veniam ratione, laboriosam recusandae natus cumque exercitationem a odit aperiam architecto nobis omnis et sequi optio blanditiis ullam assumenda maxime!</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, nulla, eligendi incidunt laudantium, vitae repellendus provident error soluta repellat cumque at saepe sint? Voluptate ullam a iure molestias quod. Lorem, ipsum dolor sit amet consectetur adipisicing elit. In provident quia tenetur aut a aperiam eveniet unde dolore? Optio recusandae iste inventore sint quas voluptatibus at nemo rem aliquid sit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt delectus veniam ratione, laboriosam recusandae natus cumque exercitationem a odit aperiam architecto nobis omnis et sequi optio blanditiis ullam assumenda maxime!</p>
     </main>
 </body>
