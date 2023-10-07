@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image/webdata.ico" type="image/x-icon">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 300px;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        .teste:hover {
+            background-color: green;
+        }
+
+        .teste2:hover {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mesclagem de Células</h1>
+    <table>
+        <tr>
+            <td class="teste2">A</td>
+            <td colspan="2" class="teste">B</td>
+
+        </tr>
+        <tr>
+            <td class="teste2">D</td>
+            <td class="teste2">E</td>
+            <td class="teste2">F</td>
+        </tr>
+        <tr>
+            <td rowspan="3" class="teste">G</td>
+            <td colspan="2" class="teste">H</td>
+            
+        </tr>
+        <tr>
+            
+            <td class="teste2">K</td>
+            <td rowspan="2" class="teste">L</td>
+        </tr>
+        <tr>
+            
+            <td class="teste2">N</td>
+            
+        </tr>
+    </table>
+</body>
+</html>
